@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Ross + Doell</title>
+<meta name="description" content="Selected product design projects.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://rossdoell.com/work.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ross + Doell">
+<meta property="og:title" content="Work — Ross + Doell">
+<meta property="og:description" content="Selected product design projects.">
+<meta property="og:url" content="https://rossdoell.com/work.html">
+<meta property="og:image" content="https://rossdoell.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Toronto skyline with the words Design it here. Build it there.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+<style>
+  :root{ --text-80:rgba(0,0,0,.6); }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){ --text-80:rgba(242,241,241,1); }
+  }
+  :root[data-theme="dark"]{ --text-80:rgba(242,241,241,1); }
+
+  .gallery{ padding-block:2rem 3.125rem; }
+  .gallery-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:3rem 2.5rem; }
+  @media (max-width:700px){ .gallery-grid{ grid-template-columns:1fr; gap:2.5rem; } }
+
+  .tile{ display:block; text-decoration:none; background:var(--paper); }
+  .tile:focus-visible{ outline:2px solid var(--red); outline-offset:-2px; }
+  .tile-media{
+    position:relative; overflow:hidden; background:var(--line); aspect-ratio:1/1;
+    container-type:inline-size;
+  }
+  .tile-media img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .tile:hover .tile-media img{ transform:scale(1.04); }
+
+  .tile-hover{
+    position:absolute; inset:0; display:flex; align-items:center; padding:2rem;
+    background:linear-gradient(to right, rgba(15,13,14,.6), rgba(15,13,14,.15) 70%, transparent);
+    opacity:0; transition:opacity .3s ease;
+  }
+  .tile:hover .tile-hover, .tile:focus-visible .tile-hover{ opacity:1; }
+  .tile-hover-inner{ border-left:2px solid var(--red); padding-left:1.25rem; max-width:34ch; }
+  .tile-hover-inner p{ color:#fff; font-size:clamp(1rem, 7cqw, 1.6rem); line-height:1.09; }
+
+  .tile-caption{ padding:1.5rem 0 0; }
+  .tile-caption .name{ font-weight:600; font-size:1.15rem; line-height:.85; letter-spacing:-0.01em; color:var(--text-80); }
+  .tile-caption .company{ margin-top:0; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text-80); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Ross + Doell home">
+      <svg viewBox="122 38 96 42" role="img" aria-hidden="true">
+        <path fill-rule="evenodd" d="M 212.31 42.16 L 205.78 47.99 L 205.78 53.48 L 178.71 53.48 L 178.71 75.14 L 198.56 75.14 L 205.78 69.69 L 205.78 75.14 L 212.31 75.14 Z M 185.32 58.95 L 205.78 58.95 L 205.78 69.69 L 185.32 69.69 Z M 126.00 53.48 L 126.00 75.14 L 132.61 75.14 L 132.61 58.95 L 146.31 58.95 L 153.52 53.48 Z M 159.44 55.66 L 159.44 62.22 L 152.02 62.22 L 152.02 66.78 L 159.44 66.78 C 159.44 66.78 159.45 72.35 159.45 72.96 L 164.80 72.96 C 164.80 72.35 164.79 66.78 164.79 66.78 L 172.23 66.78 L 172.23 62.22 L 164.79 62.22 L 164.79 55.66 Z"/>
+      </svg>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="work.html" class="current">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" hidden>
+  <button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav class="mobile-nav-links" aria-label="Primary"></nav>
+</div>
+
+<main>
+
+  <div class="wrap">
+  <div class="gallery">
+
+    <div class="gallery-grid">
+      <a class="tile" href="sink-caddy.html">
+        <div class="tile-media">
+          <img src="images/tiles/sink-caddy.webp" alt="Orange Umbra Sink Caddy, product render" loading="lazy">
+          <div class="tile-hover">
+            <div class="tile-hover-inner">
+              <p>A sculpted sink caddy that turns everyday dish tools into a clean, considered counter object.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-caption">
+          <div class="name">Sink Caddy</div>
+          <div class="company">Umbra</div>
+        </div>
+      </a>
+      <a class="tile" href="amber.html">
+        <div class="tile-media">
+          <img src="images/tiles/amber.webp" alt="Amber, a clear polycarbonate smart home hub enclosure, product render" loading="lazy">
+          <div class="tile-hover">
+            <div class="tile-hover-inner">
+              <p>A clear, injection-moulded enclosure for an open-source smart home hub.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-caption">
+          <div class="name">Amber</div>
+          <div class="company">Nabu Casa</div>
+        </div>
+      </a>
+      <a class="tile" href="ionscan-600.html">
+        <div class="tile-media">
+          <img src="images/tiles/ionscan-600.webp" alt="IONSCAN 600 trace detector in Smiths Detection blue, product render" loading="lazy">
+          <div class="tile-hover">
+            <div class="tile-hover-inner">
+              <p>A handheld trace detector redesigned for faster response and easier field use in security screening.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-caption">
+          <div class="name">IONSCAN 600</div>
+          <div class="company">Smiths</div>
+        </div>
+      </a>
+      <a class="tile" href="circuit-playground.html">
+        <div class="tile-media">
+          <img src="images/tiles/circuit-playground.webp" alt="Circuit Playground in its clear enclosure with its LEDs lit" loading="lazy">
+          <div class="tile-hover">
+            <div class="tile-hover-inner">
+              <p>A learn-to-code electronics board designed to make hardware approachable.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-caption">
+          <div class="name">Circuit Playground</div>
+          <div class="company">Adafruit Industries</div>
+        </div>
+      </a>
+      <a class="tile" href="wand.html">
+        <div class="tile-media">
+          <img src="images/tiles/end-effector.webp" alt="End Effector assembly-line diagnostic tool, product render" loading="lazy">
+          <div class="tile-hover">
+            <div class="tile-hover-inner">
+              <p>A handheld diagnostic tool for verifying connections on an assembly line without damaging pins.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-caption">
+          <div class="name">End Effector</div>
+          <div class="company">ARCX</div>
+        </div>
+      </a>
+      <a class="tile" href="wellness-screening-station.html">
+        <div class="tile-media">
+          <img src="images/tiles/kiosk.webp" alt="Wellness Screening Station kiosk in a building lobby" loading="lazy">
+          <div class="tile-hover">
+            <div class="tile-hover-inner">
+              <p>A self-serve kiosk for fast, contactless health screening at building entrances.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-caption">
+          <div class="name">Wellness Screening Station</div>
+          <div class="company">Eaigle</div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="foot-news">
+      <form class="news-form" id="news-form" novalidate>
+        <label class="news-label" for="news-email">Sign up for our newsletter</label>
+        <input class="news-input" id="news-email" name="email" type="email" autocomplete="email" placeholder="Sign up for our newsletter" required>
+        <button class="news-submit" type="submit">Submit</button>
+      </form>
+      <p class="news-status" id="news-status" role="status" aria-live="polite"></p>
+    </div>
+    <div class="foot-meta">
+      Toronto, Ontario<br>
+      © 2001–2026 Ross + Doell Inc. — <a href="legal.html">Legal</a>
+    </div>
+  </div>
+</footer>
+
+<script src="header-scroll.js"></script>
+<script src="mobile-menu.js"></script>
+<script src="newsletter.js"></script>
+</body>
+</html>

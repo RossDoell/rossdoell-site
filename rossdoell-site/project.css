@@ -1,0 +1,41 @@
+/* Shared layout for the case-study pages (hero scroll cue, intro, gallery,
+   photo carousel, and the closing call to action). Each page keeps only its
+   own hero and photo treatments inline. */
+
+.scroll-cue svg{ width:22px; height:22px; display:block; }
+@keyframes scrollCueBob{ 0%,100%{ transform:translate(-50%,0); } 50%{ transform:translate(-50%,8px); } }
+@media (prefers-reduced-motion: reduce){ .scroll-cue{ animation:none; } }
+.project-intro{ border-top:1px solid var(--line); padding-block:5rem; text-align:center; }
+.project-intro-inner{ max-width:60ch; margin-inline:auto; }
+.project-intro h2{
+  font-size:clamp(1.4rem, 1.15rem + 1vw, 1.75rem); font-weight:600; letter-spacing:-0.01em;
+  color:var(--text-60); margin-bottom:1.25rem;
+}
+.project-intro p{ font-size:1.1rem; line-height:1.75; color:var(--muted); }
+.project-intro p + p{ margin-top:1.25rem; }
+.project-gallery{ border-top:1px solid var(--line); padding-block:5rem; }
+.gallery-wide{ display:grid; gap:1.875rem; }
+.project-cta{
+  border-top:1px solid var(--line); padding-block:4rem;
+  display:flex; justify-content:center;
+}
+.btn-primary{
+  display:inline-block; background:var(--red); color:#fff; text-decoration:none;
+  font-weight:600; font-size:.95rem; letter-spacing:.01em;
+  padding:1rem 2.25rem; transition:background .2s ease;
+}
+.btn-primary:hover{ background:var(--red-deep); }
+
+/* default photo frames: wide shots are 16:9 and photos fill their frame;
+   pages with transparent renders override these to sit them on a backdrop */
+.wide-shot{ aspect-ratio:16/9; overflow:hidden; background:var(--line); }
+.wide-shot img{ width:100%; height:100%; object-fit:cover; display:block; }
+.carousel-photo{ width:100%; height:100%; overflow:hidden; background:var(--line); }
+.carousel-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* photo carousel (pages with a .carousel-track) */
+.gallery-pillars{ margin-top:1.875rem; }
+.carousel-wrap{ overflow:hidden; }
+.carousel-track{ display:flex; gap:1.875rem; transition:transform .7s cubic-bezier(.65,0,.35,1); }
+.carousel-slot{ flex:0 0 calc(50% - .9375rem); aspect-ratio:1/1; }
+@media (max-width:800px){ .carousel-slot{ flex-basis:100%; } }
